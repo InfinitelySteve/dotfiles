@@ -1,18 +1,24 @@
 #!/usr/bin/env bash
 
 # Install command-line tools using Homebrew.
+brew tap homebrew/cask-drivers
+brew tap homebrew/cask-fonts
+brew tap homebrew/cask-versions
+brew tap jakehilborn/jakehilborn
+brew tap romkatv/powerlevel10k
+brew tap romkatv/powerlevel9k
 
-# Make sure we’re using the latest Homebrew.
+# Make sure weâre using the latest Homebrew.
 brew update
 
 # Upgrade any already-installed formulae.
 brew upgrade
 
-# Save Homebrew’s installed location.
+# Save Homebrewâs installed location.
 BREW_PREFIX=$(brew --prefix)
 
 # Install GNU core utilities (those that come with macOS are outdated).
-# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
+# Donât forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
@@ -20,16 +26,20 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
+# Install mas to download apps from the App Store.
+brew install mas
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
-# Install a modern version of Bash.
-brew install bash
-brew install bash-completion2
+# Install zsh shell.
+brew install zsh
+brew install zsh-autosuggestions
+brew install zsh-completions
+
 
 # Switch to using brew-installed bash as default shell
-if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
-  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
-  chsh -s "${BREW_PREFIX}/bin/bash";
+if ! fgrep -q "${BREW_PREFIX}/bin/zsh" /etc/shells; then
+  echo "${BREW_PREFIX}/bin/zsh" | sudo tee -a /etc/shells;
+  chsh -s "${BREW_PREFIX}/bin/zsh";
 fi;
 
 # Install `wget` with IRI support.
@@ -96,6 +106,39 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+
+# Install personal iterms
+brew install plex
+brew install iterm2
+brew install postman
+brew install rclone
+brew install visual-studio-code
+brew install powerlevel10k
+brew install powerlevel9k
+brew install tmux
+brew install python@3.9
+brew install displayplacer
+brew install scrcpy
+brew install youtube-dl
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
+brew install libusb
+brew install discord
+brew install iterm2
+brew install sonos
+brew install visual-studio-code
+brew install android-messages
+brew install androidtool
+brew install font-hack-nerd-font
+brew install megasync
+brew install sony-ps4-remote-play
+brew install vlc
+brew install android-platform-tools
+brew install cheatsheet
+brew install font-powerline-symbols
+brew install moonlight
+brew install spotify
+brew install balenaetcher
 
 # Remove outdated versions from the cellar.
 brew cleanup
