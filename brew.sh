@@ -107,7 +107,12 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
-# Install personal iterms
+https://apps.apple.com/us/app/gif-keyboard/id1043270657?mt=12
+# Install personal items
+brew install google-chrome
+brew install google-photos-backup-and-sync
+brew install parsec
+brew install mackup
 brew install plex
 brew install iterm2
 brew install postman
@@ -139,6 +144,16 @@ brew install font-powerline-symbols
 brew install moonlight
 brew install spotify
 brew install balenaetcher
+brew install steam
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Begin install of Mac App store programs.
+mas install 1043270657 #GIF Keyboard (2.0.5)
+mas install 668208984 #GIPHY CAPTURE (4.1)
+mas install 485812721 #TweetDeck (3.17)
+mas install 441258766 #Magnet (2.5.0)
+#mas install 1480068668 #Messenger (73.2.121)
+#mas install 497799835 #Xcode (12.2)
+#mas install 1295203466 #Microsoft Remote Desktop (10.5.0)
