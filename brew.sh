@@ -107,7 +107,6 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
-https://apps.apple.com/us/app/gif-keyboard/id1043270657?mt=12
 # Install personal items
 brew install google-chrome
 brew install google-photos-backup-and-sync
