@@ -28,8 +28,6 @@ brew install moreutils
 brew install findutils
 # Install mas to download apps from the App Store.
 brew install mas
-# Install GNU `sed`, overwriting the built-in `sed`.
-#brew install gnu-sed --with-default-names
 # Install zsh shell.
 brew install zsh
 brew install zsh-autosuggestions
@@ -145,5 +143,3 @@ mas install 668208984 #GIPHY CAPTURE (4.1)
 mas install 485812721 #TweetDeck (3.17)
 mas install 441258766 #Magnet (2.5.0)
 mas install 1480068668 #Messenger (73.2.121)
-#mas install 497799835 #Xcode (12.2)
-#mas install 1295203466 #Microsoft Remote Desktop (10.5.0)
