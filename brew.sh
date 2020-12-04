@@ -29,7 +29,7 @@ brew install findutils
 # Install mas to download apps from the App Store.
 brew install mas
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+#brew install gnu-sed --with-default-names
 # Install zsh shell.
 brew install zsh
 brew install zsh-autosuggestions
@@ -43,13 +43,13 @@ if ! fgrep -q "${BREW_PREFIX}/bin/zsh" /etc/shells; then
 fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+#brew install wget --with-iri
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+#brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
@@ -91,10 +91,8 @@ brew install xz
 # Install other useful binaries.
 brew install ack
 #brew install exiv2
-brew install git
 brew install git-lfs
 brew install gs
-brew install imagemagick --with-webp
 brew install lua
 brew install lynx
 brew install p7zip
@@ -102,21 +100,20 @@ brew install pigz
 brew install pv
 brew install rename
 brew install rlwrap
-brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
 
 # Install personal items
-brew install google-chrome
-brew install google-photos-backup-and-sync
-brew install parsec
+brew install --cask google-chrome
+brew install --cask google-photos-backup-and-sync
+brew install --cask parsec
 brew install mackup
-brew install plex
-brew install iterm2
-brew install postman
+brew install --cask plex
+brew install --cask iterm2
+brew install --cask postman
 brew install rclone
-brew install visual-studio-code
+brew install --cask visual-studio-code
 brew install powerlevel10k
 brew install powerlevel9k
 brew install tmux
@@ -124,35 +121,29 @@ brew install python@3.9
 brew install displayplacer
 brew install scrcpy
 brew install youtube-dl
-brew install zsh-autosuggestions
-brew install zsh-syntax-highlighting
 brew install libusb
-brew install discord
-brew install iterm2
-brew install sonos
-brew install visual-studio-code
-brew install android-messages
-brew install androidtool
+brew install --cask discord
+brew install --cask iterm2
+brew install --cask sonos
+brew install --cask android-messages
+brew install --cask androidtool
 brew install font-hack-nerd-font
-brew install megasync
+brew install --cask megasync
 brew install sony-ps4-remote-play
-brew install vlc
-brew install android-platform-tools
-brew install cheatsheet
+brew install --cask vlc
+brew install --cask android-platform-tools
+brew install --cask cheatsheet
 brew install font-powerline-symbols
-brew install moonlight
-brew install spotify
-brew install balenaetcher
-brew install steam
-
-# Remove outdated versions from the cellar.
-brew cleanup
+brew install --cask moonlight
+brew install --cask spotify
+brew install --cask balenaetcher
+brew install --cask steam
 
 # Begin install of Mac App store programs.
 mas install 1043270657 #GIF Keyboard (2.0.5)
 mas install 668208984 #GIPHY CAPTURE (4.1)
 mas install 485812721 #TweetDeck (3.17)
 mas install 441258766 #Magnet (2.5.0)
-#mas install 1480068668 #Messenger (73.2.121)
+mas install 1480068668 #Messenger (73.2.121)
 #mas install 497799835 #Xcode (12.2)
 #mas install 1295203466 #Microsoft Remote Desktop (10.5.0)
