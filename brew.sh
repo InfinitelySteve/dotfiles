@@ -27,8 +27,6 @@ brew install moreutils
 brew install findutils
 # Install mas to download apps from the App Store.
 brew install mas
-# Install GNU `sed`, overwriting the built-in `sed`.
-#brew install gnu-sed --with-default-names
 # Install zsh shell.
 brew install zsh
 brew install zsh-autosuggestions
