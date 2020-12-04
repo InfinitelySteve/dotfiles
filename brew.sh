@@ -9,8 +9,7 @@ brew tap romkatv/powerlevel10k
 brew tap romkatv/powerlevel9k
 
 # Make sure weâre using the latest Homebrew.
-brew update
-
+brew
 # Upgrade any already-installed formulae.
 brew upgrade
 
@@ -105,15 +104,8 @@ brew install vbindiff
 brew install zopfli
 
 # Install personal items
-brew install --cask google-chrome
-brew install --cask google-photos-backup-and-sync
-brew install --cask parsec
 brew install mackup
-brew install --cask plex
-brew install --cask iterm2
-brew install --cask postman
 brew install rclone
-brew install --cask visual-studio-code
 brew install powerlevel10k
 brew install powerlevel9k
 brew install tmux
@@ -122,18 +114,25 @@ brew install displayplacer
 brew install scrcpy
 brew install youtube-dl
 brew install libusb
+brew install font-hack-nerd-font
+brew install font-powerline-symbols
+brew install --cask sony-ps4-remote-play
+brew install --cask google-chrome
+brew install --cask google-photos-backup-and-sync
+brew install --cask parsec
+brew install --cask plex
+brew install --cask iterm2
+brew install --cask postman
+brew install --cask visual-studio-code
 brew install --cask discord
 brew install --cask iterm2
 brew install --cask sonos
 brew install --cask android-messages
 brew install --cask androidtool
-brew install font-hack-nerd-font
 brew install --cask megasync
-brew install sony-ps4-remote-play
 brew install --cask vlc
 brew install --cask android-platform-tools
 brew install --cask cheatsheet
-brew install font-powerline-symbols
 brew install --cask moonlight
 brew install --cask spotify
 brew install --cask balenaetcher
