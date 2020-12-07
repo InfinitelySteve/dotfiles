@@ -69,23 +69,24 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    colorize
-    iterm2
-    extract
-    systemadmin
-    perms
-    wd
-    adb
-    git
-    cp
-    docker
-    history
-    pip
-    pj
-    sudo
-    zsh_reload
-    alias-finder
-    dircycle
+	common-aliases
+	colorize
+	iterm2
+	extract
+	systemadmin
+	perms
+	wd
+	adb
+	git
+	cp
+	docker
+	history
+	pip
+	pj
+	sudo
+	zsh_reload
+	alias-finder
+	dircycle
     )
 
 source $ZSH/oh-my-zsh.sh
